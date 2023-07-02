@@ -1,0 +1,195 @@
+/* 
+  최상위부터 하위로 내려가면서 작성하는 것이 중요
+*/
+
+:root {
+    --text-color: #3c689d;
+    --background-color: #ffffff;
+    --accent-color: #d49466;
+  }
+  
+  body {
+    margin: 0; /* 테두리 space 제거 */
+    font-family: sans-serif;
+  }
+  p{
+    line-height: 2;
+  }
+
+
+  li{
+    transition: transform 0.3s ease;
+
+}
+
+li:hover{
+    transform: scale(1.1);
+}
+  
+  a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 16px;
+  }
+  
+  .navbar {
+    display: flex;
+    flex-wrap: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-color);
+    padding: 8px 12px;
+  }
+  
+  .navbar__logo {
+   
+    font-size: 18px;
+    color: var(--text-color);
+  }
+  
+  .navbar__logo i {
+    color: var(--accent-color);
+  }
+  
+  .navbar__menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    padding-right: 50px;
+    
+  }
+  
+  .navbar__menu li:hover {
+    /* background-color: var(--accent-color); */
+    border-radius: 0px;
+  }
+  
+  .navbar__menu li {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+  
+  .navbar__icons {
+    list-style: none;
+    color: var(--text-color);
+    display: flex;
+    padding-left: 0px;
+  }
+  
+  .navbar__icons li {
+    padding: 12px 12px;
+  }
+  
+  .navbar__toggleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 40px;
+    color: var(--accent-color);
+    padding: 20px
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 8px 24px;
+    }
+    .navbar__menu {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    .navbar__menu li {
+      width: 100%;
+      text-align: center;
+    }
+    .navbar__icons {
+      display: none;
+      justify-content: center;
+      width: 100%;
+    }
+    .navbar__toggleBtn {
+      display: block;
+    }
+    .navbar__menu.active,
+    .navbar__icons.active {
+      display: flex;
+    }
+  }
+  
+
+
+  .menu, .drop-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    /* display: inline-block; */
+    background-color: #ffffff;
+    /* position: relative; */
+}
+
+.menu-item a {
+    text-decoration: none;
+    /* padding: 6px 10px; */
+    color:var(--text-color);
+    display: block;
+}
+
+.drop-menu {
+    display: none;
+    position: absolute;
+    background-color: #6092ce;
+    min-width: 100px;
+    width: auto;
+    /* box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12); */
+}
+
+.drop-menu-item {
+    width: 100%;
+    /* background-color: #fff; */
+    min-width: 100px;
+    width: auto;
+    border-radius: 0px;
+
+
+
+}
+
+.drop-menu-item:hover {
+    background-color: #ffffff;
+    border-radius: 0;
+    color: #000000;
+    border-radius: 0px;
+
+}
+
+.drop-menu-item a {
+    color: #fff;
+    
+}
+
+.drop-menu-item a:hover {
+    color: #000000;
+    
+}
+
+.menu-item:hover .drop-menu {
+    display: block;
+}
+
+
+/* 
+a{
+    transition: transform 0.3s ease;
+
+}
+
+a:hover{
+    transform: scale(1.1);
+} */
+

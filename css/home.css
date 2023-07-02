@@ -1,0 +1,75 @@
+.text-image-landing-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 10px; */
+    /* padding: 10px; */
+    /* height: 100vh; */
+    width: 100%;
+    background-color: #fff;
+
+}
+
+.text-landing-container{
+    /* display: flex; */
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    width: 50%;
+    /* margin: 20px; */
+    padding: 50px;
+    min-width: 400px;
+}
+
+.image-landing-container{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    width: 50%;
+    /* margin: 10px; */
+    padding: 50px;
+  flex-wrap: wrap;
+}
+
+.image-landing-container img{
+    /* width: 100%;
+    height: 100%; */
+    min-width: 400px;
+}
+
+
+
+.landing-text-subtitle{
+    color: #6A6C6F;
+    font-family: "Inter", Sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.landing-button{
+    background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
+margin-top: 30px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 75px;
+    display: block;
+    border: none;
+    font-family: "Inter", Sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+
+.landing-button:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
